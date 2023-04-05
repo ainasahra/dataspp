@@ -1,7 +1,9 @@
 <template>
     <div>
-        <div class="" style="display: block;">    
+        <div class="thead" style="display: block;">    
             <form @submit.prevent="addData" >
+                <thead>
+                    <tr>
                 <div class="" style="display: block;">
                     <label for="nama">Nama siswa</label>
                     <input type="text" v-model="nama">
@@ -18,7 +20,9 @@
                     <label for="bayar">Jumlah bayar</label>
                     <input type="number" v-model="bayar">
                 </div>
-                    <button type="submit" class="btn btn-primary text-docaration-none nb-3">Tambah</button>
+                </tr>
+                </thead>
+                    <button type="submit" class="tbody">Tambah</button>
                
             </form>
         </div>
@@ -53,9 +57,9 @@ const addData = async ()=>{
 
 <style scoped>
 thead {
-  background-color: rgb(128, 125, 122);
+  background-color: rgb(231, 26, 163);
 }
 tbody {
-  background-color: rgb(231, 231, 231) ;
+  background-color: rgb(14, 176, 216) ;
 }
 </style>
